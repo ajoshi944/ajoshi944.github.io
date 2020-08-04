@@ -49,15 +49,7 @@ linkedin_url: https://www.linkedin.com/in/ajoshi944/
 github_url: https://github.com/ajoshi944
 
 # Google Analytics Tracking ID goes here:
-google_analytics: <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174509165-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-174509165-1');
-</script>
+google_analytics: UA-174509165-1
 
 
 # The following settings are NECESSARY for the Prologue theme to run:
