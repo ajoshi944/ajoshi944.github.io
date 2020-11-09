@@ -3,4 +3,18 @@ title: Satellite Imagery
 layout: page
 hide: true
 ---
-<p>This page contains details of satellite imagery project.</p>
+<p>Introduction</p>
+<p>The main aim of this project is to help farmers do precision and sustainable farming using state-of-art technologies as well as provide market access to them, benefiting in improving their socio-economic status. 
+  The stepping stone of this project has initially started with grape farmers in India. This project is being developed with the actual on-field experiences of grapes farmers.</p>
+<p>Impact</p>
+<p>The current challenge in farming is about accurate and timely suggestions to overcome the issues that are being faced in routine farming activities. 
+  We observed that in grape farming, farmers take extra precautions to make sure the produced yield is healthy and high-standard. 
+  Hence, a grape farmer has to be very cautious in water management, fertilizer/pesticide management, disease management, etc. 
+  We identified the gap between the tasks that need to be carried out on a grape farm as compared to the work done. 
+  Hence, our AI algorithms and models will be used to drive farmers towards a smart decision-making system.</p>
+<p>Cloud Masking Model</p>
+<p> In the entire project, the most crucial part was the satellite images. Initially, we found that the clouds in the satellite images tend to disrupt the data that was used for calculating several farming beneficial indexes. Hence there was a dire need for cloud removal or masking. To solve this problem, we tried multiple labeled datasets, but we needed a custom dataset as per our requirements. Therefore, we created a labeled dataset of around 3500 images of 228x228 px using the Sentinel-2 satellite data. 
+<p>For segmentation of the clouds and generation of accurate masks, I used U-net as it is widely preferred and gives accurate results for satellite image processing. The model accuracy and mIoU were not as expected for 50 epochs. Currently, I am working on the hyper-parameter tuning as well as transfer learning for the task at hand.</p> </p>
+<p>Dataset</p>
+<p><img src="{{ 'assets/images/data_sample.png' | relative_url }}" alt="Data Sample" /></p>
+
