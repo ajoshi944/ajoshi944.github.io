@@ -71,7 +71,9 @@
               <div class="space-x-4">
                 <a href="#about" class="hover:text-blue-800">About</a>
                 <a href="#projects" class="hover:text-blue-800">Projects</a>
-                <a href="#skills" class="hover:text-blue-800">Skills</a>
+                {
+                // <a href="#skills" class="hover:text-blue-800">Skills</a> //
+                }
                 <a href="#contact" class="hover:text-blue-800">Contact</a>
               </div>
             </nav>
@@ -80,24 +82,26 @@
           {/* About */}
           <section id="about" class="container mx-auto px-4 py-20">
             <h2 class="text-3xl font-bold mb-4">About</h2>
-            <p class="text-lg max-w-2xl">
+            {/*<p class="text-lg max-w-2xl">
               PhD candidate in Computer Science at West Virginia University, specializing in <span class="highlight">deep learning</span> and <span class="highlight">computer vision</span>. Experienced in developing <span class="highlight">GAN</span>-based models and synthetic data generation, with a patent pending for an innovative image deblurring algorithm.
+            </p>*/}
+            
+            <p style="margin-bottom: 20px;">
+              I am a machine learning researcher and Ph.D. student specializing in deep learning for biometrics and computer vision. As part of my doctoral research at West Virginia University under the guidance of Dr. Jeremy Dawson, I focus on optimizing the recognition fingerphotos and latent fingerprints using advanced generative models and self-supervised learning frameworks.
             </p>
-            <p class="text-lg max-w-2xl">
-              I am a machine learning researcher and Ph.D. student specializing in deep learning applications for biometrics and computer vision. Currently pursuing my doctorate at West Virginia University, I focus on designing advanced generative models and self-supervised frameworks to solve challenging problems in fingerprint and fingerphoto recognition.
-            </p>
-
-            <p class="text-lg max-w-2xl">
-              I hold a Bachelor’s degree in Computer Science from Pune University and a Master’s in Information Technology from Sikkim Manipal University DDE. Over the years, I have contributed to both academic research and industry-driven projects, working with technologies such as Python, C/C++, C#, SQL, and cloud platforms like Google Cloud and Microsoft Azure.
-            </p>
-
-            <p class="text-lg max-w-2xl">
-              My recent work includes developing novel GAN-based image deblurring methods (with a pending patent), creating quality assessment frameworks, enhancing latent fingerprints using style transfer, and generating synthetic biometric data to tackle data scarcity challenges. 
+            
+            <p style="margin-bottom: 20px;">
+              I hold a Bachelor’s degree in Computer Science from Pune University and a Master’s in Information Technology from Sikkim Manipal University DDE. My work bridges research and practical solutions, with contributions to both academic and industry projects involving Python, C/C++, C#, SQL, and cloud technologies like Google Cloud and Microsoft Azure.
             </p>
 
-            <p class="text-lg max-w-2xl">
-              Beyond my research, I enjoy playing the flute and listening to Indian classical music to unwind and find inspiration.
+            <p style="margin-bottom: 20px;">
+              My recent projects include a pending patent for a GAN-based image deblurring algorithm, quality assessment frameworks for biometric data, style transfer techniques for latent fingerprint enhancement, and synthetic data generation methods to tackle data scarcity in biometrics.
             </p>
+
+            <p style="margin-bottom: 20px;">
+              Beyond research, I enjoy playing the flute and listening to Indian classical music to unwind and find inspiration. Feel free to explore my portfolio and reach out if you’d like to connect or collaborate.
+            </p>
+
 
           </section>
 
@@ -107,27 +111,47 @@
               <h2 class="text-3xl font-bold mb-8">Projects</h2>
               <div class="grid gap-6 md:grid-cols-2">
                 <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project1.jpg" alt="Fingerphoto Deblurring" class="w-full h-48 object-cover rounded-md mb-4" />
                   <h3 class="text-xl font-semibold mb-2">Fingerphoto Deblurring Using Attention-guided Multi-stage <span class="highlight">GAN</span></h3>
-                  <p class="mb-2">Developed a guided-attention based multi-task <span class="highlight">GAN</span>, improving recognition accuracy from 69.39% to 95.02%. <a href="https://arxiv.org/abs/2106.11354">Paper I</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10201840">Paper II</a></p>
+                  <p class="mb-2">Developed a multi-task <span class="highlight">GAN</span> with guided attention, boosting fingerphoto recognition accuracy from 69.39% to 95.02% (patent pending).</p>
+                  <p class="text-sm"><a href="https://arxiv.org/pdf/2106.11354" aria-label="Paper I for Fingerphoto Deblurring">Paper I</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10201840" aria-label="Paper II for Fingerphoto Deblurring">Paper II</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project2.jpg" alt="UFQA Quality Assessment" class="w-full h-48 object-cover rounded-md mb-4" />
                   <h3 class="text-xl font-semibold mb-2">UFQA: Utility-guided Fingerphoto Quality Assessment</h3>
-                  <p class="mb-2">Used <span class="highlight">ResNet18</span> in a self-supervised dual encoder to assess fingerphoto quality. <a href="https://arxiv.org/pdf/2407.11141">Paper</a></p>
+                  <p class="mb-2">Designed a <span class="highlight">ResNet18</span>-based dual encoder to assess fingerphoto quality, addressing local distortions with high accuracy.</p>
+                  <p class="text-sm"><a href="https://arxiv.org/pdf/2407.11141" aria-label="Paper for UFQA">Paper</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project3.jpg" alt="Synthetic Fingerprint Generation" class="w-full h-48 object-cover rounded-md mb-4" />
                   <h3 class="text-xl font-semibold mb-2">Synthetic Latent Fingerprint Generation Using Style Transfer</h3>
-                  <p class="mb-2">Proposed a style transfer method with self-attention for synthetic fingerprints. <a href="https://arxiv.org/pdf/2309.15734">Paper</a></p>
+                  <p class="mb-2">Created a style transfer method with self-attention to generate synthetic fingerprints, enhancing <span class="highlight">biometric</span> model training.</p>
+                  <p class="text-sm"><a href="https://arxiv.org/pdf/2309.15734" aria-label="Paper for Synthetic Fingerprint">Paper</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project3.jpg" alt="Image Enhancement" class="w-full h-48 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">Latent Fingerprint Enhancement</h3>
+                  <p class="mb-2">Created a style transfer method with self-attention to generate synthetic fingerprints, enhancing <span class="highlight">biometric</span> model training.</p>
+                  <p class="text-sm"><a href="https://arxiv.org/abs/1234.5681" aria-label="Paper for Synthetic Fingerprint">Paper</a></p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project4.jpg" alt="Satellite Imagery in Agriculture" class="w-full h-48 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-semibold mb-2">CMPA</h3>
+                  <p class="mb-2">Deployed a segmentation model on <span class="highlight">Azure</span>, improving crop analysis accuracy by 15% for agricultural applications.</p>
+                  <p class="text-sm"><a href="https://nextgeniupac2019.wordpress.com/2019/03/12/responsible-use-of-agrochemicals/" aria-label="GitHub for Satellite Imagery">GitHub</a></p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <img src="/images/project4.jpg" alt="Satellite Imagery in Agriculture" class="w-full h-48 object-cover rounded-md mb-4" />
                   <h3 class="text-xl font-semibold mb-2">Satellite Imagery in Agriculture</h3>
-                  <p class="mb-2">Deployed a segmentation model on <span class="highlight">Azure</span>, improving crop analysis accuracy by 15%. <a href="https://github.com/ajoshi944/agri-imagery">GitHub</a></p>
+                  <p class="mb-2">Deployed a segmentation model on <span class="highlight">Azure</span>, improving crop analysis accuracy by 15% for agricultural applications.</p>
+                  <p class="text-sm"><a href="https://github.com/ajoshi944/agri-imagery" aria-label="GitHub for Satellite Imagery">GitHub</a></p>
                 </div>
               </div>
             </div>
           </section>
 
           {/* Skills */}
-          <section id="skills" class="container mx-auto px-4 py-20">
+          {/* <section id="skills" class="container mx-auto px-4 py-20">
             <h2 class="text-3xl font-bold mb-8">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
               <div class="flex">
@@ -143,7 +167,7 @@
                 <span><span class="highlight">Git</span>, Azure, AWS, Docker</span>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Contact */}
           <section id="contact" class="bg-gray-100 py-20">
