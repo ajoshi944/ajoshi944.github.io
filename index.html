@@ -109,42 +109,54 @@
               <h2 class="text-3xl font-bold mb-8">Projects</h2>
               <div class="grid gap-6 md:grid-cols-2">
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/project1.png" alt="Fingerphoto Deblurring" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">Fingerphoto Deblurring Using Attention-guided Multi-stage <span class="highlight">GAN</span></h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/project1.png" alt="Fingerphoto Deblurring" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">Fingerphoto Deblurring Using Attention-guided Multi-stage <span class="highlight">GAN</span></h3>
                   <p class="mb-2"><span class="highlight">FDeblurGAN (Fingerphoto Deblurring)</span> was a multi-stage deep GAN-based algorithm designed and implemented to restore blurred fingerphotos using a multi-stage, attention-based conditional GAN architecture.</p>
                   <p>I evaluated the verification performance of the deblurred fingerphotos against their corresponding ground truth sharp images using two different fingerprint verifiers. The proposed method was compared with a state-of-the-art deblurring algorithm (DeblurGAN-v2) and achieved approximately a 14% improvement in AUC. A patent for this algorithm is pending.</p>
                   <p class="text-sm"><a href="https://arxiv.org/pdf/2106.11354" aria-label="Paper I for Fingerphoto Deblurring">Paper I</a> | <a href="https://ieeexplore.ieee.org/abstract/document/10201840" aria-label="Paper II for Fingerphoto Deblurring">Paper II</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/project2.png" alt="UFQA Quality Assessment" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">UFQA: Utility-guided Fingerphoto Quality Assessment</h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/project2.png" alt="UFQA Quality Assessment" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">UFQA: Utility-guided Fingerphoto Quality Assessment</h3>
                   <p class="mb-2"><span class="highlight">UFQA (Utility-guided Fingerphoto Quality Assessment)</span> proposed a self-supervised dual encoder framework with a fusion module and a quality prediction network to estimate fingerphoto quality as a predictor of recognition utility.</p>
                   <p>I designed a holistic labeling process that considered both image characteristics and identity information to train the model effectively. The method was evaluated on multiple publicly available datasets and demonstrated improved performance compared to three existing image quality assessment (IQA) algorithms.</p>
                   <p class="text-sm"><a href="https://arxiv.org/pdf/2407.11141" aria-label="Paper for UFQA">Paper</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/project3.png" alt="Synthetic Fingerprint Generation" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">Synthetic Latent Fingerprint Generation Using Style Transfer</h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/project3.png" alt="Synthetic Fingerprint Generation" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">Synthetic Latent Fingerprint Generation Using Style Transfer</h3>
                   <p class="mb-2"><span class="highlight">Latent Fingerprint Style Transfer</span> explored enhancing latent fingerprint images by transferring realistic ridge patterns. In this approach, a pair of a fingerprint and a real latent fingerprint were used as the content and style images, respectively. A pre-trained network extracted features from these inputs, and the style features were fused with the content features to generate a stylized feature representation.</p>
                   <p> A decoder was then trained to reconstruct the stylized image from the fused features, producing latent fingerprints with clearer ridge patterns matching the style of the input latent image. This technique improved the visual quality and recognizability of latent fingerprints for further biometric processing.</p>
                   <p class="text-sm"><a href="https://arxiv.org/pdf/2309.15734" aria-label="Paper for Synthetic Fingerprint">Paper</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/project4.png" alt="Image Enhancement" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">Latent Fingerprint Enhancement</h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/project4.png" alt="Image Enhancement" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">Latent Fingerprint Enhancement</h3>
                   <p class="mb-2"><span class="highlight">Latent Fingerprint Enhancement</span> focused on improving the clarity and recognition accuracy of low-quality latent fingerprints. I designed an enhancement algorithm and generated realistic synthetic latent fingerprints to train the model effectively. A multi-task GAN was trained to enhance latent fingerprints, and its performance was evaluated against several publicly available datasets, showing improvements over state-of-the-art enhancement methods.</p>
                   <p>I further evaluated the accuracy of detected minutiae points on both the original and enhanced fingerprints and verified the improvement in image quality metrics after enhancement.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/cmpa_logo.png" alt="Cmpa" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">CMPA</h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/cmpa_logo.png" alt="Cmpa" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">CMPA</h3>
                   <p class="mb-2"><span class="highlight">CMPA (Computer Vision and Machine Learning-based Platform for Agrochemicals)</span> is an Android application designed to scan and read agrochemical product labels using optical character recognition (OCR). During development, I explored and evaluated various APIs, including Tesseract and the Microsoft Computer Vision API, to achieve accurate text extraction. The final implementation integrates the Google Vision API to reliably recognize text on product labels in real time.</p>
                   <p>This project was shortlisted at the IUPAC Summit.</p>
                   <p class="text-sm"><a href="https://nextgeniupac2019.wordpress.com/2019/03/12/responsible-use-of-agrochemicals/" aria-label="GitHub for Satellite Imagery">GitHub</a></p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                  <img src="/images/data_sample.png" alt="Satellite Imagery in Agriculture" class="absolute inset-0 w-full h-full object-cover rounded-md mb-4" />
-                  <h3 class="text-xl font-semibold mb-2">Satellite Imagery in Agriculture</h3>
+                  <div class="relative w-full aspect-[4/3] overflow-hidden rounded-md mb-4">
+                    <img src="/images/data_sample.png" alt="Satellite Imagery in Agriculture" class="absolute inset-0 w-full h-full object-cover" />
+                  </div>
+                    <h3 class="text-xl font-semibold mb-2">Satellite Imagery in Agriculture</h3>
                   <p class="mb-2"><span class="highlight">Satellite imagery for precision agriculture</span> was an initiative aimed at supporting precision and sustainable farming practices to improve farmers' socio-economic status. It began with grape farmers in India and incorporated real on-field insights to develop smart decision-making tools for water, fertilizer, pesticide, and disease management.</p>
                   <p>A key challenge addressed was the presence of clouds in satellite imagery, which disrupted the calculation of vital agricultural indices. To overcome this, I created a custom labeled dataset of over 3,500 Sentinel-2 images and trained a U-Net segmentation model to accurately generate cloud masks. I also experimented with hyperparameter tuning and transfer learning to improve accuracy and mIoU for reliable cloud removal.</p>
                 </div>
